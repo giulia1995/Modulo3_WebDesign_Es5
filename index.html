@@ -1,169 +1,473 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Browse_Mockup</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-<!--  Nav Bar -->
+    <!--  Nav Bar -->
     <nav class="navbar navbar-expand-lg bg-body-light position-relative px-2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./assets/logo.svg" alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Browse
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Landings
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Pages
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Accounts
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-             
-            </ul>
-            <form class="d-flex" role="search">
-             <div class="notifica bg-body-tertiary position-relative mx-3"><ion-icon class="iconanotifica" name="notifications-outline"></ion-icon>
-                <span class=" violet translate-middle badge border border-light rounded-circle p-1"><span class="visually-hidden">unread messages</span></span>
-            </div>
-             <div class="notifica position-relative"><img width="100%" height="auto" src="./assets/avatar-1.jpg" alt="avatar-1">
-             <span class=" green translate-middle badge border border-light bg-success rounded-circle p-1"><span class="visually-hidden">unread messages</span></span>
-            </div>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/logo.svg" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler order-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Browse
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Landings
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Accounts
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!--  Nav Bar -->
-      <!--  Jumbotron -->
-      <header class="container-fluid">
+        <form class="d-flex" role="search">
+          <div class="notifica bg-body-tertiary position-relative mx-3">
+            <ion-icon
+              class="iconanotifica"
+              name="notifications-outline"
+            ></ion-icon>
+            <span
+              class="violet translate-middle badge border border-light rounded-circle p-1"
+              ><span class="visually-hidden">unread messages</span></span
+            >
+          </div>
+          <div class="notifica position-relative">
+            <img
+              width="100%"
+              height="auto"
+              src="./assets/avatar-1.jpg"
+              alt="avatar-1"
+            />
+            <span
+              class="green translate-middle badge border border-light bg-success rounded-circle p-1"
+              ><span class="visually-hidden">unread messages</span></span
+            >
+          </div>
+        </form>
+      </div>
+    </nav>
+    <!--  Nav Bar -->
+    <!--  Jumbotron -->
+    <header class="container-fluid">
       <div class="jumbotron container">
         <div class="row">
-          <div class="col ">
-            <div id="jumbotron" class="card w-100 border-0 bg-transparent text-white" style="width: 18rem;">
-                <div class="card-body">
-                  <h1 class="card-title">Welcome Web Students!</h1>
-                  <p id="subtitle" class="card-text">Hand-picked instructor and expertly crafted <br> courses, designed for the modern students and <br> entrepreneur.</p>
-                  <div class="d-flex gap-1">
+          <div class="col">
+            <div
+              id="jumbotron"
+              class="card w-100 border-0 bg-transparent text-white"
+              style="width: 18rem"
+            >
+              <div class="card-body">
+                <h1 class="card-title">Welcome Web Students!</h1>
+                <p id="subtitle" class="card-text">
+                  Hand-picked instructor and expertly crafted <br />
+                  courses, designed for the modern students and <br />
+                  entrepreneur.
+                </p>
+                <div class="d-flex gap-1">
                   <a href="#" id="btngreen" class="btn py-1">Browse Courses</a>
-                  <a href="#" class="btn btn-light py-1 text-dark">Are You Instructor?</a>
-                </div>
+                  <a href="#" class="btn btn-light py-1 text-dark"
+                    >Are You Instructor?</a
+                  >
                 </div>
               </div>
+            </div>
           </div>
           <div class="col">
-            <img src="./assets/hero-img.png" alt="user">
+            <img src="./assets/hero-img.png" alt="user" />
           </div>
         </div>
       </div>
     </header>
-       <!--  Jumbotron -->
- <!--  SUB JUMBO -->
- <section>
-  <div class="container">
-    <div class="row">
-      <div class="col d-flex p-3">
-        <div class="icona_testo d-flex">
-       <div class="subjumboicon bg-body-tertiary position-relative mx-3"> <ion-icon name="videocam-outline"></ion-icon></div>
-        <div id="subjumbo d-flex align-items-center">
-        <h6 class="fw-bold">30,000 online courses</h6>
-        <p class="text-secondary">Enjoy a variety of fresh topics</p>
+    <!--  Jumbotron -->
+    <!--  SUB JUMBO -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex p-3">
+            <div class="icona_testo d-flex">
+              <div class="subjumboicon bg-body-tertiary position-relative mx-3">
+                <ion-icon name="videocam-outline"></ion-icon>
+              </div>
+              <div id="subjumbo d-flex align-items-center">
+                <h6 class="fw-bold">30,000 online courses</h6>
+                <p class="text-secondary">Enjoy a variety of fresh topics</p>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex p-3">
+            <div class="icona_testo d-flex">
+              <div class="subjumboicon bg-body-tertiary position-relative mx-3">
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+              <div id="subjumbo d-flex align-items-center">
+                <h6 class="fw-bold">Expert instruction</h6>
+                <p class="text-secondary">Find the right instructor for you</p>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex p-3">
+            <div class="icona_testo d-flex">
+              <div class="subjumboicon bg-body-tertiary position-relative mx-3">
+                <ion-icon name="time-outline"></ion-icon>
+              </div>
+              <div id="subjumbo d-flex align-items-center">
+                <h6 class="fw-bold">Lifetime access</h6>
+                <p class="text-secondary">Learn on your schedule</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+    <!--  SUB JUMBO -->
+    <!--  Carusel -->
+    <div class="container">
+      <h3>Recommended to you</h3>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center gx-2">
+            <div class="col">
+              <div class="card border-0" style="width: 18rem">
+                <img
+                  src="./assets/course-graphql.jpg"
+                  class="card-img-top"
+                  alt="corso"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    GraphQL: introduction <br />
+                    to graphQL for beginners
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item d-flex align-items-center gap-1 border-0"
+                  >
+                    <ion-icon name="time-outline"></ion-icon> 2h 40m<ion-icon
+                      name="cellular-outline"
+                    ></ion-icon>
+                    Advance
+                  </li>
+                  <li class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 2.5
+                    <span>(1,500)</span>
+                  </li>
+                  <li class="list-group-item">$500 <span>$600</span></li>
+                </ul>
+                <div
+                  class="d-flex p-2 justify-content-between align-items-center border-top"
+                >
+                  <div class="img-user d-flex align-items-center">
+                    <img
+                      class="notifica-user"
+                      width="10"
+                      height="auto"
+                      src="./assets/avatar-5.jpg"
+                      alt="avatar-5"
+                    />
+                    <p class="p-1 d-flex m-0 align-items-center">
+                      Brooklyn Simmons
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0" style="width: 18rem">
+                <img
+                  src="./assets/course-graphql.jpg"
+                  class="card-img-top"
+                  alt="corso"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    GraphQL: introduction <br />
+                    to graphQL for beginners
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item d-flex align-items-center gap-1 border-0"
+                  >
+                    <ion-icon name="time-outline"></ion-icon> 2h 40m<ion-icon
+                      name="cellular-outline"
+                    ></ion-icon>
+                    Advance
+                  </li>
+                  <li class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 2.5
+                    <span>(1,500)</span>
+                  </li>
+                  <li class="list-group-item">$500 <span>$600</span></li>
+                </ul>
+                <div
+                  class="d-flex p-2 justify-content-between align-items-center border-top"
+                >
+                  <div class="img-user d-flex align-items-center">
+                    <img
+                      class="notifica-user"
+                      width="10"
+                      height="auto"
+                      src="./assets/avatar-5.jpg"
+                      alt="avatar-5"
+                    />
+                    <p class="p-1 d-flex m-0 align-items-center">
+                      Brooklyn Simmons
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0" style="width: 18rem">
+                <img
+                  src="./assets/course-graphql.jpg"
+                  class="card-img-top"
+                  alt="corso"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    GraphQL: introduction <br />
+                    to graphQL for beginners
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item d-flex align-items-center gap-1 border-0"
+                  >
+                    <ion-icon name="time-outline"></ion-icon> 2h 40m<ion-icon
+                      name="cellular-outline"
+                    ></ion-icon>
+                    Advance
+                  </li>
+                  <li class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 2.5
+                    <span>(1,500)</span>
+                  </li>
+                  <li class="list-group-item">$500 <span>$600</span></li>
+                </ul>
+                <div
+                  class="d-flex p-2 justify-content-between align-items-center border-top"
+                >
+                  <div class="img-user d-flex align-items-center">
+                    <img
+                      class="notifica-user"
+                      width="10"
+                      height="auto"
+                      src="./assets/avatar-5.jpg"
+                      alt="avatar-5"
+                    />
+                    <p class="p-1 d-flex m-0 align-items-center">
+                      Brooklyn Simmons
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0" style="width: 18rem">
+                <img
+                  src="./assets/course-graphql.jpg"
+                  class="card-img-top"
+                  alt="corso"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    GraphQL: introduction <br />
+                    to graphQL for beginners
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="list-group-item d-flex align-items-center gap-1 border-0"
+                  >
+                    <ion-icon name="time-outline"></ion-icon> 2h 40m<ion-icon
+                      name="cellular-outline"
+                    ></ion-icon>
+                    Advance
+                  </li>
+                  <li class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 2.5
+                    <span>(1,500)</span>
+                  </li>
+                  <li class="list-group-item">$500 <span>$600</span></li>
+                </ul>
+                <div
+                  class="d-flex p-2 justify-content-between align-items-center border-top"
+                >
+                  <div class="img-user d-flex align-items-center">
+                    <img
+                      class="notifica-user"
+                      width="10"
+                      height="auto"
+                      src="./assets/avatar-5.jpg"
+                      alt="avatar-5"
+                    />
+                    <p class="p-1 d-flex m-0 align-items-center">
+                      Brooklyn Simmons
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="left"
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button id="right"
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="col d-flex p-3">
-      <div class="icona_testo d-flex">
-     <div class="subjumboicon bg-body-tertiary position-relative mx-3"><ion-icon name="people-outline"></ion-icon> </div>
-      <div id="subjumbo d-flex align-items-center">
-      <h6 class="fw-bold">Expert instruction</h6>
-      <p class="text-secondary">Find the right instructor for you</p>
-    </div>
-    </div>
-  </div>
-  <div class="col d-flex p-3">
-    <div class="icona_testo d-flex">
-   <div class="subjumboicon bg-body-tertiary position-relative mx-3"> <ion-icon name="time-outline"></ion-icon></div>
-    <div id="subjumbo d-flex align-items-center">
-    <h6 class="fw-bold">Lifetime access</h6>
-    <p class="text-secondary">Learn on your schedule</p>
-  </div>
-  </div>
-</div>
-     
-    </div>
-  </div>
- </section>
-  <!--  SUB JUMBO -->
-   <!--  Carusel -->
-  
-   <div class="card" style="width: 18rem;">
-    <img src="./assets/course-graphql.jpg" class="card-img-top" alt="corso">
-    <div class="card-body">
-      <h5 class="card-title">GraphQL: introduction <br> to graphQL for beginners</h5> 
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item"> <ion-icon name="time-outline"></ion-icon> 2h 40m<ion-icon name="cellular-outline"></ion-icon> Advance </li>
-      <li class="list-group-item"><ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star-half"></ion-icon>
-        <ion-icon name="star-outline"></ion-icon>
-        <ion-icon name="star-outline"></ion-icon> 2.5 <span>(1,500)</span></li>
-      <li class="list-group-item">$500 <span>$600</span></li>
-    </ul>
-    <div class="d-flex p-3">
-      <div class="img-user d-flex">
-    <img class="notifica-user " width="10" height="auto" src="./assets/avatar-5.jpg" alt="avatar-5">
-    <p class="p-1">Brooklyn Simmons</p>
-  </div>
-  <div class="save d-flex"><ion-icon name="bookmark-outline"></ion-icon></div>
-    
     </div>
   </div>
 
     <!--  Carusel -->
 
-
-      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
