@@ -76,16 +76,16 @@
       <!--  Nav Bar -->
       <!--  Jumbotron -->
       <header class="container-fluid">
-      <div class="jumbotron container text-center">
+      <div class="jumbotron container">
         <div class="row">
-          <div class="col text-center  p-2">
-            <div class="card w-100 border-0 bg-transparent text-white" style="width: 18rem;">
+          <div class="col ">
+            <div id="jumbotron" class="card w-100 border-0 bg-transparent text-white" style="width: 18rem;">
                 <div class="card-body">
                   <h1 class="card-title">Welcome Web Students!</h1>
-                  <p class="card-text">Hand-picked instructor and expertly crafted <br> courses, designed for the modern students and <br> entrepreneur.</p>
-                  <div class="d-flex">
-                  <a href="#" class="btn btn-primary py-1">Go somewhere</a>
-                  <a href="#" class="btn btn-primary py-1 text-dark">Go somewhere</a>
+                  <p id="subtitle" class="card-text">Hand-picked instructor and expertly crafted <br> courses, designed for the modern students and <br> entrepreneur.</p>
+                  <div class="d-flex gap-1">
+                  <a href="#" id="btngreen" class="btn py-1">Browse Courses</a>
+                  <a href="#" class="btn btn-light py-1 text-dark">Are You Instructor?</a>
                 </div>
                 </div>
               </div>
@@ -97,6 +97,71 @@
       </div>
     </header>
        <!--  Jumbotron -->
+ <!--  SUB JUMBO -->
+ <section>
+  <div class="container">
+    <div class="row">
+      <div class="col d-flex p-3">
+        <div class="icona_testo d-flex">
+       <div class="subjumboicon bg-body-tertiary position-relative mx-3"> <ion-icon name="videocam-outline"></ion-icon></div>
+        <div id="subjumbo d-flex align-items-center">
+        <h6 class="fw-bold">30,000 online courses</h6>
+        <p class="text-secondary">Enjoy a variety of fresh topics</p>
+      </div>
+      </div>
+    </div>
+    <div class="col d-flex p-3">
+      <div class="icona_testo d-flex">
+     <div class="subjumboicon bg-body-tertiary position-relative mx-3"><ion-icon name="people-outline"></ion-icon> </div>
+      <div id="subjumbo d-flex align-items-center">
+      <h6 class="fw-bold">Expert instruction</h6>
+      <p class="text-secondary">Find the right instructor for you</p>
+    </div>
+    </div>
+  </div>
+  <div class="col d-flex p-3">
+    <div class="icona_testo d-flex">
+   <div class="subjumboicon bg-body-tertiary position-relative mx-3"> <ion-icon name="time-outline"></ion-icon></div>
+    <div id="subjumbo d-flex align-items-center">
+    <h6 class="fw-bold">Lifetime access</h6>
+    <p class="text-secondary">Learn on your schedule</p>
+  </div>
+  </div>
+</div>
+     
+    </div>
+  </div>
+ </section>
+  <!--  SUB JUMBO -->
+   <!--  Carusel -->
+  
+   <div class="card" style="width: 18rem;">
+    <img src="./assets/course-graphql.jpg" class="card-img-top" alt="corso">
+    <div class="card-body">
+      <h5 class="card-title">GraphQL: introduction <br> to graphQL for beginners</h5> 
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> <ion-icon name="time-outline"></ion-icon> 2h 40m<ion-icon name="cellular-outline"></ion-icon> Advance </li>
+      <li class="list-group-item"><ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon> 2.5 <span>(1,500)</span></li>
+      <li class="list-group-item">$500 <span>$600</span></li>
+    </ul>
+    <div class="d-flex p-3">
+      <div class="img-user d-flex">
+    <img class="notifica-user " width="10" height="auto" src="./assets/avatar-5.jpg" alt="avatar-5">
+    <p class="p-1">Brooklyn Simmons</p>
+  </div>
+  <div class="save d-flex"><ion-icon name="bookmark-outline"></ion-icon></div>
+    
+    </div>
+  </div>
+
+    <!--  Carusel -->
+
+
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

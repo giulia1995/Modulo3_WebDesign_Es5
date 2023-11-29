@@ -1,3 +1,6 @@
+body{
+    background-color:#F5F4F8 !important ;
+}
 .notifica{
     border-radius: 50%;
     width: 40px;
@@ -5,12 +8,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
 }
 .notifica img{
     border-radius: 50%;
 }
+.notifica-user{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .iconanotifica{
     color: grey;
 }
@@ -32,3 +43,45 @@
  header.container-fluid{
     background-color:#7550FE ;
 }
+
+#btngreen{
+    background-color: #20c997 !important; 
+    color: white !important;
+} 
+
+#btngreen:hover{
+    color: black !important;
+} 
+#subtitle{
+    opacity: 50%;
+}
+#jumbotron{
+    margin-top: 80px;
+}
+#subjumbo{
+    font-size: smaller;
+    
+}
+#subjumbo p{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: smaller !important;   
+    color: grey !important; 
+}
+
+.subjumboicon{
+    background-color: #FFEEDA !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+}
+.icona-testo{
+    align-items: center !important;
+}
+section{
+    background-color: white;
+}   
