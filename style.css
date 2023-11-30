@@ -56,7 +56,7 @@ body{
     opacity: 50%;
 }
 #jumbotron{
-    margin-top: 80px;
+   padding-top: 10% !important;
 }
 #subjumbo{
     font-size: smaller;
@@ -90,12 +90,38 @@ h3{
     margin-top: 10% !important;
     margin-bottom: 2% !important;
 }
-#left{
-position: absolute;
-left: -100px;
-color: #6610f2 !important;
+#text-subtitle{
+    color:grey !important;
 }
-#right{
-    position: absolute;
-   right: -100px;
+#cellular{
+    color: #6610f2 !important;
+}
+#star{
+    color: rgb(233, 167, 12) !important;
+}
+#details{
+    color: grey !important;
+}
+#save{
+    margin-right: 20px !important;
+}
+.text-decoration-line-through{
+    color: gray !important;
+}
+#immaginecorso{
+    border-start-end-radius: 10px !important;
+    border-start-start-radius: 10px !important;
+}
+footer{
+    margin-top: 10%;
+    border-top: 0.5px solid rgb(192, 190, 190);
+    padding-top: 10px;
+}
+#footer{
+    font-weight:400;
+    color: rgb(108, 106, 106);
+}
+#privacy{
+    font-weight:400;
+    color: rgb(108, 106, 106);
 }
