@@ -21,7 +21,6 @@ body{
     align-items: center;
 }
 
-
 .iconanotifica{
     color: grey;
 }
@@ -89,11 +88,12 @@ h3{
     color: grey !important;
 }
 #save{
-    margin-right: 20px !important;
+    color:  grey !important;
+    margin-right: 20px !important;      
 }
-#save:hover{
-   ;
-}
+
+
+
 .text-decoration-line-through{
     color: gray !important;
 }
@@ -150,3 +150,9 @@ footer .row{
     position: absolute;
     right: 65px;
   }
+  .card:hover{
+    transform: scale(1.02);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(109,109,109,0.56) !important; 
+    box-shadow: 5px 5px 15px 5px rgba(109,109,109,0.56) !important;
+    cursor: pointer;
+}
