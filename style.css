@@ -91,6 +91,9 @@ h3{
 #save{
     margin-right: 20px !important;
 }
+#save:hover{
+   ;
+}
 .text-decoration-line-through{
     color: gray !important;
 }

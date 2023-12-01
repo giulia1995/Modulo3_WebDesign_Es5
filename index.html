@@ -168,9 +168,9 @@
   <div class="container">
     <h3>Recommended to you</h3>
     <div id="carosello1" class="carousel slide">
-      <div class="carousel-inner">
+      <div class="carousel-inner px-5 py-5 position-relative">
         <div class="carousel-item active">
-          <div id="carosello1" class="row justify-content-center gx-2">
+          <div class="row justify-content-center gx-2">
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
               <div class="card h-100 border-0 shadow rounded-3">
                 <img id="immaginecorso" class="w-100" src="./assets/course-graphql.jpg" class="card-img-top"
@@ -334,15 +334,227 @@
             </div>
           </div>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span id="left" class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span id="right" class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <button
+          class="carousel-control-prev position-absolute top-50 start-0 translate-middle"
+          type="button"
+          data-bs-target="#carosello1"
+          data-bs-slide="prev"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-back-outline"
+            ></ion-icon
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next carousel-control-prev position-absolute top-50 start-100 translate-middle"
+          type="button"
+          data-bs-target="#carosello1"
+          data-bs-slide="next"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-forward-outline"
+            ></ion-icon
+          ></span>
+        </button>
         </div>
+        <div class="carousel-item active">
+          <div class="row justify-content-center gx-2">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-graphql.jpg" class="card-img-top"
+                  alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    GraphQL: introduction <br />
+                    to graphQL for beginners
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 2h 40m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Advance
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 2.5
+                    <span id="details">(1,500)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $500
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$600</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-5.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">
+                      Brooklyn Simmons
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-javascript.jpg" class="card-img-top"
+                  alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    A Complete beginner's <br />
+                    Guide to Javascript
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 4h 10m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Advance
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 3.5
+                    <span id="details">(7,500)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $700
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$850</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-1.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">
+                      Jenny Wilson
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-node.jpg" class="card-img-top" alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Beginning Node.js, Express <br />
+                    & MongoDB Development
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 2h 00m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Intermediate
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 4.0
+                    <span id="details">(15,700)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $800
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$950</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-3.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">Sina Ray</p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-laravel.jpg" class="card-img-top"
+                  alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Laravel:The Ultimate <br />
+                    Beginner's Guide to Learn
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 1h 00m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Beginner
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon> 4.5
+                    <span id="details">(2,500)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $170
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$220</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-7.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">
+                      Sobo Rikhan
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+          class="carousel-control-prev position-absolute top-50 start-0 translate-middle"
+          type="button"
+          data-bs-target="#carosello1"
+          data-bs-slide="prev"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-back-outline"
+            ></ion-icon
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next carousel-control-prev position-absolute top-50 start-100 translate-middle"
+          type="button"
+          data-bs-target="#carosello1"
+          data-bs-slide="next"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-forward-outline"
+            ></ion-icon
+          ></span>
+        </button>
+        </div>
+        
+        
       </div>
     </div>
   </div>
@@ -350,8 +562,8 @@
   <!--  Carusel 2-->
   <div class="container">
     <h3>Most Popular</h3>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
+    <div id="carosello2" class="carousel slide">
+      <div class="carousel-inner px-5 py-5 position-relative">
         <div class="carousel-item active">
           <div class="row justify-content-center gx-2">
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
@@ -516,14 +728,223 @@
             </div>
           </div>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span id="left" class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span id="right" class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <button
+          class="carousel-control-prev position-absolute top-50 start-0 translate-middle"
+          type="button"
+          data-bs-target="#carosello2"
+          data-bs-slide="prev"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-back-outline"
+            ></ion-icon
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next carousel-control-prev position-absolute top-50 start-100 translate-middle"
+          type="button"
+          data-bs-target="#carosello2"
+          data-bs-slide="next"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-forward-outline"
+            ></ion-icon
+          ></span>
+        </button>
+        </div>
+        <div class="carousel-item active">
+          <div class="row justify-content-center gx-2">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-html.jpg" class="card-img-top" alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    HTML Full Course - Build a <br />
+                    Website Tutorial
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 3h 16m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Beginner
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 3.0
+                    <span id="details">(1,600)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $550
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$700</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-4.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">
+                      Miston Wilson
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-javascript.jpg" class="card-img-top"
+                  alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    A Complete beginner's <br />
+                    Guide to Javascript
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 4h 10m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Advance
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 3.5
+                    <span id="details">(7,500)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $700
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$850</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-1.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">
+                      Jenny Wilson
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-node.jpg" class="card-img-top" alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Beginning Node.js, Express <br />
+                    & MongoDB Development
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 2h 00m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Intermediate
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 4.0
+                    <span id="details">(15,700)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $800
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$950</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-3.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">Sina Ray</p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-react.jpg" class="card-img-top"
+                  alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    How to easily create a <br />
+                    website with React
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 3h 55m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Advance
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon> 4.5
+                    <span id="details">(1,500)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $600
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$750</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-2.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">
+                      April Noms
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+          class="carousel-control-prev position-absolute top-50 start-0 translate-middle"
+          type="button"
+          data-bs-target="#carosello2"
+          data-bs-slide="prev"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-back-outline"
+            ></ion-icon
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next carousel-control-prev position-absolute top-50 start-100 translate-middle"
+          type="button"
+          data-bs-target="#carosello2"
+          data-bs-slide="next"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-forward-outline"
+            ></ion-icon
+          ></span>
+        </button>
         </div>
       </div>
     </div>
@@ -532,8 +953,8 @@
   <!--  Carusel 3-->
   <div class="container">
     <h3>Trending</h3>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
+    <div id="carosello3" class="carousel slide">
+      <div class="carousel-inner px-5 py-5 position-relative">
         <div class="carousel-item active">
           <div class="row justify-content-center gx-2">
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
@@ -698,14 +1119,223 @@
             </div>
           </div>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span id="left" class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span id="right" class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <button
+          class="carousel-control-prev position-absolute top-50 start-0 translate-middle"
+          type="button"
+          data-bs-target="#carosello3"
+          data-bs-slide="prev"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-back-outline"
+            ></ion-icon
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next carousel-control-prev position-absolute top-50 start-100 translate-middle"
+          type="button"
+          data-bs-target="#carosello3"
+          data-bs-slide="next"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-forward-outline"
+            ></ion-icon
+          ></span>
+        </button>
+        </div>
+        <div class="carousel-item active">
+          <div class="row justify-content-center gx-2">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-gatsby.jpg" class="card-img-top"
+                  alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Revolutionize how you build <br />
+                    the web
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 1h 46m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Intermediate
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 2.0
+                    <span id="details">(16,500)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $800
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$850</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-5.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">
+                      Jenny Wilson
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-html.jpg" class="card-img-top" alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    HTML Full Course - Build a <br />
+                    Website Tutorial
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 3h 16m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Advance
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 3.0
+                    <span id="details">(1,600)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $550
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$700</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-4.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">
+                      Miston Wilson
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-node.jpg" class="card-img-top" alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Beginning Node.js, Express <br />
+                    & MongoDB Development
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 2h 00m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Intermediate
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon> 4.0
+                    <span id="details">(15,700)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $800
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$950</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-3.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">Sina Ray</p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <div class="card h-100 border-0 shadow rounded-3">
+                <img id="immaginecorso" class="w-100" src="./assets/course-laravel.jpg" class="card-img-top"
+                  alt="corso" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Laravel:The Ultimate <br />
+                    Beginner's Guide to Learn
+                  </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li id="text-subtitle" class="list-group-item d-flex align-items-center gap-1 border-0">
+                    <ion-icon name="time-outline"></ion-icon> 1h 00m<ion-icon id="cellular" name="cellular"></ion-icon>
+                    Beginner
+                  </li>
+                  <li id="star" class="list-group-item border-0">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon> 4.5
+                    <span id="details">(2,500)</span>
+                  </li>
+                  <li class="list-group-item fw-bolder">
+                    $170
+                    <span class="text-decoration-line-through text-body-tertiary fw-normal">$220</span>
+                  </li>
+                </ul>
+                <div id="details" class="d-flex p-2 justify-content-between align-items-center border-top">
+                  <div class="img-user d-flex align-items-center">
+                    <img class="notifica-user" width="10" height="auto" src="./assets/avatar-7.jpg" alt="avatar-5" />
+                    <p class="p-2 d-flex m-0 align-items-center">
+                      Sobo Rikhan
+                    </p>
+                  </div>
+                  <div class="save d-flex align-items-center">
+                    <ion-icon id="save" name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+          class="carousel-control-prev position-absolute top-50 start-0 translate-middle"
+          type="button"
+          data-bs-target="#carosello3"
+          data-bs-slide="prev"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-back-outline"
+            ></ion-icon
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next carousel-control-prev position-absolute top-50 start-100 translate-middle"
+          type="button"
+          data-bs-target="#carosello3"
+          data-bs-slide="next"
+        >
+          <span
+            ><ion-icon
+              class="arrow text-white rounded-circle bg-secondary p-3"
+              name="chevron-forward-outline"
+            ></ion-icon
+          ></span>
+        </button>
         </div>
       </div>
     </div>
