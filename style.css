@@ -25,21 +25,7 @@ body{
 .iconanotifica{
     color: grey;
 }
-.violet{
-    background-color: #6610f2;
-    border-radius: 50%;
-    border: white solid 2px  !important;
-    position: absolute;
-    left:80% !important;
-    top: 15%;   
-}
-.green{
-    border-radius: 50%;
-    border: white solid 2px  !important;
-    position: absolute;
-    left:80% !important;
-    top: 80%;   
-}
+
  header.container-fluid{
     background-color:#7550FE ;
 }
@@ -125,3 +111,39 @@ footer{
     font-weight:400;
     color: rgb(108, 106, 106);
 }
+@media screen and (max-width: 576px){
+    #footCol{
+        text-align: center;
+    }
+}
+footer .row{
+    padding-bottom: 20px;
+}
+#notification1 {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 4px;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #6610f2;
+    border: 1px solid white;
+  }
+  
+  #notification2 {
+    display: block;
+    position: absolute;
+    right: 15px;
+    border-radius: 50%;
+    bottom: 0px;
+    width: 8px;
+    height: 8px;
+    background-color: #198754;
+    border: 1px solid white;
+  }
+  
+  #navIcon {
+    position: absolute;
+    right: 65px;
+  }
