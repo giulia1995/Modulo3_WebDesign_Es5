@@ -87,9 +87,13 @@ h3{
 #details{
     color: grey !important;
 }
-#save{
-    color:  grey !important;
-    margin-right: 20px !important;      
+.save-icon{
+    fill: none !important;
+    stroke: grey !important;
+    stroke-width: 5% !important;
+}
+.save-icon:hover{
+    fill: grey !important;
 }
 
 
